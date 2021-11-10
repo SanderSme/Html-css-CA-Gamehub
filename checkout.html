@@ -17,8 +17,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/edit.profile.css" />
-    <title>Signup</title>
+    <link rel="stylesheet" href="./css/checkout.css" />
+    <title>Checkout</title>
   </head>
   <body>
     <header class="header">
@@ -94,96 +94,51 @@
     </header>
     <main>
       <section class="section">
-        <h1 class="main-title">Edit profile</h1>
-        <div class="section-content">
-          <div class="information profile-pic-container">
-            <p class="title">Picture:</p>
-            <div class="mobile-profile-pic"></div>
-            <img
-              src="./Images/profile-pic.png"
-              alt="Profile picture"
-              class="profile-pic"
-            />
-            <a href="#">Upload photo</a>
+        <h1 class="main-title">Checkout</h1>
+        <div class="checkout-content">
+          <div class="payment-method">
+            <a href="#" class="credit-card">Credit-card</a>
+            <a href="#" class="vipps">Vipps</a>
           </div>
-          <div class="signup-form">
+          <div class="card-details">
             <form action="POST">
-              <div class="form-title">
-                <label for="E-Mail">E-Mail:</label>
-              </div>
               <input
-                id="email"
-                class="input-text"
+                id="form-info"
+                class="cardnumber"
                 type="text"
-                name="EMail"
-                placeholder="Enter your E-mail"
+                name="Card"
               />
+              <div class="form-title">
+                <label for="Card">Card-number</label>
+              </div>
             </form>
-            <div class="names">
+            <div class="date-cvc">
               <form action="POST">
+                <input
+                  id="form-info"
+                  class="input-text"
+                  type="text"
+                  name="Date"
+                />
                 <div class="form-title">
-                  <label for="FirstName">First name:</label>
+                  <label for="Date">Ex. date</label>
                 </div>
-                <input
-                  type="text"
-                  name="FirstName"
-                  id="firstname"
-                  class="input-text-first-name"
-                  placeholder="Enter your first name"
-                />
               </form>
               <form action="POST">
-                <div class="form-title lastname">
-                  <label for="LastName">Last name:</label>
-                </div>
                 <input
+                  id="form-info"
+                  class="input-text CVC"
                   type="text"
-                  name="LastName"
-                  id="lastname"
-                  class="input-text-last-name"
-                  placeholder="Enter your last name"
+                  name="CVC"
                 />
+                <div class="form-title CVC">
+                  <label for="CVC">CVC</label>
+                </div>
               </form>
             </div>
-            <form action="POST">
-              <div class="form-title">
-                <label for="Phone">Phone-number:</label>
-              </div>
-              <input
-                type="text"
-                name="Phone"
-                id="phone"
-                class="input-text"
-                placeholder="Enter your phone-number"
-              />
-            </form>
-            <form action="POST">
-              <div class="form-title">
-                <label for="Password">Password:</label>
-              </div>
-              <input
-                type="text"
-                name="Password"
-                id="password"
-                class="input-text"
-                placeholder="Enter your password"
-              />
-            </form>
-            <form action="POST">
-              <div class="form-title">
-                <label for="Password-reenter">Re-enter Password:</label>
-              </div>
-              <input
-                type="text"
-                name="Password-reenter"
-                id="password-reenter"
-                class="input-text"
-                placeholder="Re-enter your password"
-              />
-            </form>
-            <div class="button-container">
-              <a href="profile.html" class="button">Save</a>
-            </div>
+          </div>
+          <div class="button">
+            <a href="./checkout.html" class="place-button">Place order</a>
           </div>
         </div>
       </section>

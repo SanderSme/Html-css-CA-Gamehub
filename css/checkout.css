@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: #f2f2f2;
+  background-color: #1d2540;
 }
 
 * {
@@ -9,11 +9,11 @@ body {
 }
 
 h1 {
-  color: #1d2540;
+  color: #fff;
 }
 
 .section {
-  background-color: #f2f2f2;
+  background-color: #1d2540;
   max-width: 390px;
   padding: 0 0.5em;
 }
@@ -180,88 +180,84 @@ h1 {
   text-align: center;
   font-size: 1.8rem;
   padding-bottom: 0.5em;
-  border-bottom: 1px solid #33333370;
+  border-bottom: 1px solid #ffffff70;
 }
 
-.profile-pic {
-  display: none;
+.checkout-content {
+  margin: auto;
+  margin-top: 5em;
+  height: 350px;
+  width: 300px;
+  background-color: #fff;
 }
 
-.mobile-profile-pic {
-  background-image: url(../Images/profile-pic.png);
-  width: 150px;
-  height: 150px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  border-radius: 100%;
-  margin: 0 auto;
-}
-
-.profile-pic-container {
-  text-align: center;
-}
-
-.form-title {
-  text-align: left;
-  margin-top: 0.5em;
-}
-
-.signup-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: center;
-  max-width: 316px;
-  margin-left: 1.3em;
-}
-
-.input-text {
-  width: 100%;
-  padding: 1.5em;
-}
-
-.names {
+.payment-method {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.lastname {
-  margin-left: 0.5em;
+.credit-card {
+  margin-top: 1em;
+  margin-left: 1.5em;
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
 }
 
-.input-text-first-name {
-  width: 150px;
-  padding: 1.5em;
+.vipps {
+  margin-top: 1em;
+  margin-right: 2.8em;
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
 }
 
-.input-text-last-name {
-  width: 150px;
-  padding: 1.5em;
-  margin-left: 0.5em;
+.form-title {
+  font-size: 70%;
+  opacity: 0.5;
+}
+
+.card-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.date-cvc {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1.5em;
+}
+
+.cardnumber {
+  width: 270px;
+  height: 40px;
+  margin-top: 5em;
+}
+
+.input-text {
+  height: 40px;
 }
 
 .button {
-  padding: 1.5rem 3rem;
+  text-align: center;
+  margin-top: 2.5em;
+}
+
+.place-button {
+  padding: 0.5em 2em;
   border-radius: 23px;
   background-color: #01403a;
+  color: #fff;
   text-decoration: none;
-  color: white;
-  cursor: pointer;
-  margin-top: 2em;
-  width: 230px;
   border: 5px solid transparent;
 }
 
-.button:hover {
-  border: 5px solid #01403a;
+.place-button:hover {
+  border: 5px solid #1d2540;
   background-color: #f2f2f2;
-  color: #01403a;
-}
-
-.button-container {
-  margin-top: 3em;
+  color: #1d2540;
 }
 
 .container {
@@ -360,43 +356,33 @@ h1 {
   }
 
   .main-title {
+    margin-top: 58px;
     text-align: left;
+    font-size: 2.4rem;
   }
 
-  .section-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  .checkout-content {
+    height: 350px;
+    width: 450px;
+    margin-bottom: 10em;
   }
 
-  .profile-pic-container {
-    order: 2;
+  .date-cvc {
+    margin-top: 2em;
   }
 
-  .mobile-profile-pic {
-    display: none;
+  .CVC {
+    margin-left: 1.1em;
   }
 
-  .profile-pic {
-    display: block;
-    width: 100%;
-    border-radius: 0;
-    margin: 0;
+  .cardnumber {
+    width: 350px;
+    height: 40px;
+    margin-top: 5em;
   }
 
-  .signup-form {
-    max-width: 470px;
-  }
-
-  .input-text-first-name {
-    padding: 1.5em 2.5em;
-    width: 200px;
-  }
-
-  .input-text-last-name {
-    width: 200px;
-    padding: 1.5em 2.5em;
-    margin-left: 0.5em;
+  .place-button {
+    padding: 1em 5em;
   }
 
   .container {
