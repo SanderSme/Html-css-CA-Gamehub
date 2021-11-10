@@ -4,21 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./css/game-information.css" />
-    <title>Game information</title>
+    <link rel="stylesheet" href="./css/sell.css" />
+    <title>Sell game</title>
   </head>
   <body>
     <header class="header">
@@ -94,36 +81,27 @@
     </header>
     <main>
       <section class="section">
-        <h1 class="main-title">Game information</h1>
-        <div class="game">
-          <img
-            src="./Images/Superduper.png"
-            alt="Super duper"
-            class="game-image"
-          />
-          <div class="game-content">
-            <h2 class="game-title">SuperDuper</h2>
-            <p class="game-information">
-              Reveal your inner superstar in this fun game from PlayBox
-            </p>
-            <div class="game-sellingpoints">
-              <span> Price: </span> <span> 35$ </span>
-            </div>
-            <div class="game-sellingpoints">
-              <span> Release date: </span> <span> 12.06.2018 </span>
-            </div>
-            <div class="game-sellingpoints">
-              <span> Multiplayer: </span> <span> 1-4 players</span>
-            </div>
-            <div class="game-sellingpoints">
-              <span> Age limit: </span> <span> 3+ </span>
-            </div>
-          </div>
+        <div class="titles">
+          <h1 class="main-title">Sell game</h1>
+          <h2 class="sold-by">Sold by</h2>
         </div>
-        <div class="button">
-          <a href="./shoppingcart.html" class="add-to-cart-button"
-            >Add to cart</a
-          >
+        <div class="game">
+          <div class="game-content">
+            <div class="picture"></div>
+            <a href="#" class="upload-link">Upload picture</a>
+            <label for="price" id="form-title">Price</label>
+            <input type="text" id="price" name="price" />
+          </div>
+          <div class="game-information">
+            <label for="title" id="title">Title</label>
+            <input type="text" id="title" name="title" />
+            <label for="category">Category</label>
+            <input type="text" name="category" id="category" />
+            <label for="age-limit">Age limit</label>
+            <input type="text" name="age-limit" id="age-limit" />
+            <label for="info">Information</label>
+            <input type="text" name="info" id="info" />
+          </div>
         </div>
       </section>
     </main>

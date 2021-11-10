@@ -17,8 +17,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/game-information.css" />
-    <title>Game information</title>
+    <link rel="stylesheet" href="./css/shoppingcart.css" />
+    <title>Shopping Cart</title>
   </head>
   <body>
     <header class="header">
@@ -92,41 +92,48 @@
         </div>
       </div>
     </header>
-    <main>
-      <section class="section">
-        <h1 class="main-title">Game information</h1>
-        <div class="game">
+    <section class="section">
+      <h1 class="main-title">Shopping cart</h1>
+      <div class="games">
+        <div class="single-game">
           <img
             src="./Images/Superduper.png"
-            alt="Super duper"
+            alt="SuperDuper"
             class="game-image"
           />
           <div class="game-content">
-            <h2 class="game-title">SuperDuper</h2>
-            <p class="game-information">
-              Reveal your inner superstar in this fun game from PlayBox
-            </p>
-            <div class="game-sellingpoints">
-              <span> Price: </span> <span> 35$ </span>
-            </div>
-            <div class="game-sellingpoints">
-              <span> Release date: </span> <span> 12.06.2018 </span>
-            </div>
-            <div class="game-sellingpoints">
-              <span> Multiplayer: </span> <span> 1-4 players</span>
-            </div>
-            <div class="game-sellingpoints">
-              <span> Age limit: </span> <span> 3+ </span>
-            </div>
+            <h1 class="game-title">SuperDuper</h1>
+            <p class="game-info">Reveal your inner superstar</p>
           </div>
         </div>
-        <div class="button">
-          <a href="./shoppingcart.html" class="add-to-cart-button"
-            >Add to cart</a
-          >
+        <div class="price-amount">
+          <p class="amount">Amount: 1</p>
+          <p class="price">35$</p>
         </div>
-      </section>
-    </main>
+        <div class="single-game">
+          <img src="./Images/Racing.png" alt="Racing" class="game-image" />
+          <div class="game-content">
+            <h1 class="game-title">Racing</h1>
+            <p class="game-info">The ultimate game for speed-lovers</p>
+          </div>
+        </div>
+        <div class="price-amount">
+          <p class="amount">Amount: 1</p>
+          <p class="price">49$</p>
+        </div>
+      </div>
+    </section>
+    <section class="section2 checkout-line">
+      <div>
+        <p>Amount:</p>
+        <p>Price:</p>
+      </div>
+      <div>
+        <p>2</p>
+        <p class="price">89$</p>
+      </div>
+      <a href="./checkout.html" class="checkout-button">Proceed to checkout</a>
+    </section>
     <footer class="footer">
       <div class="section2">
         <div class="container">

@@ -17,8 +17,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/game-information.css" />
-    <title>Game information</title>
+    <link rel="stylesheet" href="./css/forsøk.css" />
+    <title>Document</title>
   </head>
   <body>
     <header class="header">
@@ -92,77 +92,70 @@
         </div>
       </div>
     </header>
-    <main>
-      <section class="section">
-        <h1 class="main-title">Game information</h1>
-        <div class="game">
-          <img
-            src="./Images/Superduper.png"
-            alt="Super duper"
-            class="game-image"
-          />
-          <div class="game-content">
-            <h2 class="game-title">SuperDuper</h2>
-            <p class="game-information">
-              Reveal your inner superstar in this fun game from PlayBox
-            </p>
-            <div class="game-sellingpoints">
-              <span> Price: </span> <span> 35$ </span>
-            </div>
-            <div class="game-sellingpoints">
-              <span> Release date: </span> <span> 12.06.2018 </span>
-            </div>
-            <div class="game-sellingpoints">
-              <span> Multiplayer: </span> <span> 1-4 players</span>
-            </div>
-            <div class="game-sellingpoints">
-              <span> Age limit: </span> <span> 3+ </span>
-            </div>
-          </div>
-        </div>
-        <div class="button">
-          <a href="./shoppingcart.html" class="add-to-cart-button"
-            >Add to cart</a
-          >
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="section2">
-        <div class="container">
-          <div class="learn-more">
-            <h2 class="learn-more-header">Learn more</h2>
-            <ul class="footer-links">
-              <li><a href="blog.html">Read our blog</a></li>
-              <li><a href="guarantee.html">Gamehub guarantee</a></li>
-              <li><a href="saftey.html">Saftey</a></li>
-              <li><a href="help.html">Help centre</a></li>
-            </ul>
-          </div>
-          <div class="about-gamehub">
-            <h2 class="about-gamehub-header">About Gamehub</h2>
-            <ul class="footer-links">
-              <li><a href="about.html">About us</a></li>
-              <li><a href="contact.html">Contact</a></li>
-              <li><a href="accessebility.html">Accessebility</a></li>
-              <li><a href="press.html">Press</a></li>
-              <li><a href="careers.html">Careers</a></li>
-              <li><a href="privacy.html">Privacy statement</a></li>
-              <li><a href="cookie.html">Cookie policy</a></li>
-              <li><a href="terms-of-service">Terms of service</a></li>
-            </ul>
-          </div>
-          <div class="find-it">
-            <h2 class="find-it-header">Find it</h2>
-            <ul class="footer-links">
-              <li><a href="games.html#digital-games">Digital games</a></li>
-              <li><a href="games.html#pre-owned-games">Pre-owned games</a></li>
-              <li><a href="merch.html">Merch</a></li>
-              <li><a href="trade-values.html">Trade values</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <section class="app-filter-icon section mobile-only">
+      <label for="filter-menu">
+        <i class="fas fa-filter mopbile-only">Filter</i>
+      </label>
+      <div class="app-filter-menu-dropdown mobile-only">
+        <input id="filter-menu" type="checkbox" />
+      <ul class="filter-dropdown mobile-only">
+        <li> <label for="all" class="app-choice">
+            <input id="all" type="radio" name="age" value="all" />
+            All
+          </label></li>
+        <li><label for="new" class="app-choice">
+            <input id="New" type="radio" name="age" value="new" />
+            New
+          </label></li>
+        <li><label for="preowned" class="app-choice">
+            <input id="Pre-owned" type="radio" name="age" value="preowned" />
+            Pre-Owned
+          </label></li>
+        <li><h4 class="app-filter-heading">Availability:</h4></li>
+        <li> <label for="instock" class="app-choice">
+            <input
+              id="InStock"
+              type="radio"
+              name="availability"
+              value="stock"
+            />
+            In stock
+          </label></li>
+        <li><label for="preorder" class="app-choice">
+            <input
+              id="PreOrder"
+              type="radio"
+              name="availability"
+              value="preorder"
+            />
+            Pre-order
+          </label></li>
+          <li><h4 class="app-filter-heading">Sort by genre:</h4></li>
+          <li><label for="action" class="app-choice">
+            <input id="action" type="checkbox" name="action" />
+            Action
+          </label></li>
+          <li><label for="adventure" class="app-choice">
+            <input id="adventure" type="checkbox" name="adventure" />
+            Adventure
+          </label></li>
+          <li><label for="indie" class="app-choice">
+            <input id="indie" type="checkbox" name="indie" />
+            Indie
+          </label></li>
+          <li><label for="sports" class="app-choice">
+            <input id="sports" type="checkbox" name="sports" />
+            Sports
+          </label></li>
+          <li><label for="racing" class="app-choice">
+            <input id="racing" type="checkbox" name="racing" />
+            Racing
+          </label></li>
+          <li><label for="strategy" class="app-choice">
+            <input id="strategy" type="checkbox" name="strategy" />
+            Strategy
+          </label></li>
+      </ul>
+    </section>
   </body>
 </html>

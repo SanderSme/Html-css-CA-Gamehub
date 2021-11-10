@@ -92,28 +92,27 @@
         </div>
       </div>
     </header>
-    <section class="section mobile-only">
-      <label for="filter-menu">
-        <i class="fas fa-filter">Filter</i>
-      </label>
-      <div class="filter-menu-dropdown">
-        <input id="filter-menu" type="checkbox" />
-        <form action="POST">
-          <div class="filter-menu-container">
-            <label for="all" class="app-choice">
+    <section class="app-filter-icon section mobile-only">
+        <label for="filter-menu">
+          <i class="fas fa-filter mopbile-only">Filter</i>
+        </label>
+        <div class="app-filter-menu-dropdown mobile-only">
+          <input id="filter-menu" type="checkbox" />
+        <ul class="filter-dropdown mobile-only">
+          <li> <label for="all" class="app-choice">
               <input id="all" type="radio" name="age" value="all" />
               All
-            </label>
-            <label for="new" class="app-choice">
+            </label></li>
+          <li><label for="new" class="app-choice">
               <input id="New" type="radio" name="age" value="new" />
               New
-            </label>
-            <label for="preowned" class="app-choice">
+            </label></li>
+          <li><label for="preowned" class="app-choice">
               <input id="Pre-owned" type="radio" name="age" value="preowned" />
               Pre-Owned
-            </label>
-            <h4 class="app-filter-heading">Availability:</h4>
-            <label for="instock" class="app-choice">
+            </label></li>
+          <li><h4 class="app-filter-heading">Availability:</h4></li>
+          <li> <label for="instock" class="app-choice">
               <input
                 id="InStock"
                 type="radio"
@@ -121,8 +120,8 @@
                 value="stock"
               />
               In stock
-            </label>
-            <label for="preorder" class="app-choice">
+            </label></li>
+          <li><label for="preorder" class="app-choice">
               <input
                 id="PreOrder"
                 type="radio"
@@ -130,35 +129,34 @@
                 value="preorder"
               />
               Pre-order
-            </label>
-            <h4 class="app-filter-heading">Sort by genre:</h4>
-            <label for="action" class="app-choice">
+            </label></li>
+            <li><h4 class="app-filter-heading">Sort by genre:</h4></li>
+            <li><label for="action" class="app-choice">
               <input id="action" type="checkbox" name="action" />
               Action
-            </label>
-            <label for="adventure" class="app-choice">
+            </label></li>
+            <li><label for="adventure" class="app-choice">
               <input id="adventure" type="checkbox" name="adventure" />
               Adventure
-            </label>
-            <label for="indie" class="app-choice">
+            </label></li>
+            <li><label for="indie" class="app-choice">
               <input id="indie" type="checkbox" name="indie" />
               Indie
-            </label>
-            <label for="sports" class="app-choice">
+            </label></li>
+            <li><label for="sports" class="app-choice">
               <input id="sports" type="checkbox" name="sports" />
               Sports
-            </label>
-            <label for="racing" class="app-choice">
+            </label></li>
+            <li><label for="racing" class="app-choice">
               <input id="racing" type="checkbox" name="racing" />
               Racing
-            </label>
-            <label for="strategy" class="app-choice">
+            </label></li>
+            <li><label for="strategy" class="app-choice">
               <input id="strategy" type="checkbox" name="strategy" />
               Strategy
-            </label>
-          </div>
-        </form>
-      </div>
+            </label></li>
+        </ul>
+      
       <section class="container">
         <div class="game">
           <img
