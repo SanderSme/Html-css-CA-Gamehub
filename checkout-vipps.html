@@ -17,7 +17,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/checkout.css" />
+    <link rel="stylesheet" href="./css/checkout-vipps.css" />
     <title>Checkout</title>
   </head>
   <body>
@@ -97,48 +97,24 @@
         <h1 class="main-title">Checkout</h1>
         <div class="checkout-content">
           <div class="payment-method">
-            <a href="#" class="credit-card">Credit-card</a>
+            <a href="./checkout-card.html" class="credit-card">Credit-card</a>
             <a href="#" class="vipps">Vipps</a>
           </div>
-          <div class="card-details">
+          <div class="vipps-details">
             <form action="POST">
               <input
                 id="form-info"
-                class="cardnumber"
+                class="vippsnumber"
                 type="text"
                 name="Card"
               />
               <div class="form-title">
-                <label for="Card">Card-number</label>
+                <label for="Vipps">Phone-number</label>
               </div>
             </form>
-            <div class="date-cvc">
-              <form action="POST">
-                <input
-                  id="form-info"
-                  class="input-text"
-                  type="text"
-                  name="Date"
-                />
-                <div class="form-title">
-                  <label for="Date">Ex. date</label>
-                </div>
-              </form>
-              <form action="POST">
-                <input
-                  id="form-info"
-                  class="input-text CVC"
-                  type="text"
-                  name="CVC"
-                />
-                <div class="form-title CVC">
-                  <label for="CVC">CVC</label>
-                </div>
-              </form>
-            </div>
           </div>
           <div class="button">
-            <a href="./checkout.html" class="place-button">Place order</a>
+            <a href="./checkout-done.html" class="place-button">Place order</a>
           </div>
         </div>
       </section>

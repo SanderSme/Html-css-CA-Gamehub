@@ -197,20 +197,40 @@ h1 {
   justify-content: space-between;
 }
 
+.card-checkbox {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #333;
+  padding: 0 1.5em 0 1em;
+}
+
+.vipps-checkbox {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #333;
+  padding: 0 3.16em 0 2em;
+}
+
+.vipps-info {
+  position: relative;
+}
+
 .credit-card {
-  margin-top: 1em;
-  margin-left: 1.5em;
-  text-decoration: none;
-  color: #000;
   font-size: 20px;
+  margin-left: -0.5em;
 }
 
 .vipps {
-  margin-top: 1em;
-  margin-right: 2.8em;
-  text-decoration: none;
-  color: #000;
   font-size: 20px;
+  margin-left: -0.5em;
+}
+
+#creditcard {
+  opacity: 0;
+}
+
+#vipps {
+  opacity: 0;
 }
 
 .form-title {
@@ -234,6 +254,33 @@ h1 {
   width: 270px;
   height: 40px;
   margin-top: 5em;
+}
+
+.phone-number {
+  position: absolute;
+  transform: translateY(-170px);
+  margin-left: -2.2em;
+  width: 270px;
+  height: 40px;
+}
+
+.vipps-info-ul {
+  display: none;
+  position: absolute;
+}
+
+#vipps:checked ~ .vipps-info-ul {
+  display: block;
+}
+
+.vipps-info-ul li {
+  list-style: none;
+}
+
+.phone-number-title {
+  position: absolute;
+  transform: translateY(-130px);
+  margin-left: -2.1em;
 }
 
 .input-text {

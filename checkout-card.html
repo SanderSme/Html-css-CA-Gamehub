@@ -17,8 +17,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/shoppingcart.css" />
-    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="./css/checkout-card.css" />
+    <title>Checkout</title>
   </head>
   <body>
     <header class="header">
@@ -92,50 +92,57 @@
         </div>
       </div>
     </header>
-    <section class="section">
-      <h1 class="main-title">Shopping cart</h1>
-      <div class="games">
-        <div class="single-game">
-          <img
-            src="./Images/Superduper.png"
-            alt="SuperDuper"
-            class="game-image"
-          />
-          <div class="game-content">
-            <h1 class="game-title">SuperDuper</h1>
-            <p class="game-info">Reveal your inner superstar</p>
+    <main>
+      <section class="section">
+        <h1 class="main-title">Checkout</h1>
+        <div class="checkout-content">
+          <div class="payment-method">
+            <a href="#" class="credit-card">Credit-card</a>
+            <a href="./checkout-vipps.html" class="vipps">Vipps</a>
+          </div>
+          <div class="card-details">
+            <form action="POST">
+              <input
+                id="form-info"
+                class="cardnumber"
+                type="text"
+                name="Card"
+              />
+              <div class="form-title">
+                <label for="Card">Card-number</label>
+              </div>
+            </form>
+            <div class="date-cvc">
+              <form action="POST">
+                <input
+                  id="form-info"
+                  class="input-text"
+                  type="text"
+                  name="Date"
+                />
+                <div class="form-title">
+                  <label for="Date">Ex. date</label>
+                </div>
+              </form>
+              <form action="POST">
+                <input
+                  id="form-info"
+                  class="input-text CVC"
+                  type="text"
+                  name="CVC"
+                />
+                <div class="form-title CVC">
+                  <label for="CVC">CVC</label>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="button">
+            <a href="./checkout-done.html" class="place-button">Place order</a>
           </div>
         </div>
-        <div class="price-amount">
-          <p class="amount">Amount: 1</p>
-          <p class="price">35$</p>
-        </div>
-        <div class="single-game">
-          <img src="./Images/Racing.png" alt="Racing" class="game-image" />
-          <div class="game-content">
-            <h1 class="game-title">Racing</h1>
-            <p class="game-info">The ultimate game for speed-lovers</p>
-          </div>
-        </div>
-        <div class="price-amount">
-          <p class="amount">Amount: 1</p>
-          <p class="price">49$</p>
-        </div>
-      </div>
-    </section>
-    <section class="section2 checkout-line">
-      <div>
-        <p>Amount:</p>
-        <p>Price:</p>
-      </div>
-      <div>
-        <p>2</p>
-        <p class="price">84$</p>
-      </div>
-      <a href="./checkout-card.html" class="checkout-button"
-        >Proceed to checkout</a
-      >
-    </section>
+      </section>
+    </main>
     <footer class="footer">
       <div class="section2">
         <div class="container">
