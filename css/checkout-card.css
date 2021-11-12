@@ -234,11 +234,16 @@ h1 {
 .cardnumber {
   width: 270px;
   height: 40px;
-  margin-top: 5em;
+  margin-top: 4em;
 }
 
 .input-text {
   height: 40px;
+  width: 100px;
+}
+
+.CVC {
+  margin-left: 5.1em;
 }
 
 .button {
