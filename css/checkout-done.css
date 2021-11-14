@@ -192,7 +192,8 @@ h1 {
 }
 
 .fa-check {
-  margin-left: 9em;
+  margin-top: 1em;
+  margin-left: 1.8em;
 }
 
 .order-placed {
@@ -325,6 +326,10 @@ h1 {
     height: 350px;
     width: 450px;
     margin-bottom: 10em;
+  }
+
+  .fa-check {
+    margin-left: 3em;
   }
 
   .place-button {
